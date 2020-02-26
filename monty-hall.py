@@ -1,19 +1,19 @@
 import random
- #1 represents a car
- #0 represent a goat
+ #1 representa un carro/premio
+ #0 representa una cabra
  
-stay = 0  #amount won if stay in the same position
-switch = 0 # amount won if you switch 
+stay = 0  # el numero de veces que que ganaste cuando no se cambio la desicion.
+switch = 0 # el numero deveces que ganaste cuando se cambio la desicion.
  
 for i in range(1000):
-    lst = [1,0,0]           # one car and two goats
-    random.shuffle(lst)     # shuffles the list randomly
+    lst = [1,0,0]           # una lista que contiene 1 carro y dos cabras
+    random.shuffle(lst)     # se barajea la lista de manera aleatoria
  
-    ran = random.randrange(3) # gets a random number for the random guess
+    ran = random.randrange(3) # numero random que simula una decision
  
-    user = lst[ran] #storing the random guess 
+    user = lst[ran] # se obtiene el resultado de la desicion simulada
  
-    del(lst[ran]) # deleting the random guess
+    del(lst[ran]) # se elimina ese elemento de la lista original
  
     huh = 0
     for i in lst: # getting a value 0 and deleting it
