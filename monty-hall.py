@@ -30,4 +30,3 @@ for i in range(1000):
  
 print("Stay =",stay)
 print("Switch = ",switch)
-#Done by Sam Witton 09/04/2014
